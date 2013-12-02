@@ -1,0 +1,159 @@
+---
+layout: index
+decription: Blog sobre tecnologia, computação gráfica e linguagem de programação.
+---
+{% include JB/setup %}
+
+<nav id="fixed-header">
+	<ul id="social-nav">
+		<li>
+			<a href="{{site.author.github}}?rel=author" title="My Github">
+				<span class="fa fa-github-square"></span>
+			</a>
+		</li>
+		<li>
+			<a href="{{site.author.linkedin}}?rel=author" title="My Linkedin">
+				<span class="fa fa-linkedin"></span>
+			</a>
+		</li>
+		<li>
+			<a href="{{site.author.twitter}}?rel=author" title="My Twitter">
+				<span class="fa fa-twitter"></span>
+			</a>
+		</li>
+		<li>
+			<a href="{{site.author.facebook}}?rel=author" title="My Facebook">
+				<span class="fa fa-facebook"></span>
+			</a>
+		</li>
+		<li>
+			<a href="{{site.author.gplus}}" rel="publisher" title="My Google+">
+				<span class="fa fa-google-plus"></span>
+			</a>
+		</li>
+		<li>
+			<a href="mailto:{{site.author.email}}?rel=author" title="Mail me ;)">
+				<span class="fa fa-envelope"></span>
+			</a>
+		</li>
+	</ul>
+
+	<ul id="page-nav">
+		<li data-menuanchor="home" class="active"><a href="#home">#home</a></li>
+		<li data-menuanchor="aboutme"><a href="#aboutme">#about-me</a></li>
+		<li data-menuanchor="myprojects"><a href="#myprojects">#My-Projects</a></li>
+		<li> <a href="/blog">#My-Blog</a> </li>
+	</ul>
+</nav>
+
+<div id="fullpage">
+
+	<div id="about-1" class="section">
+		<header id="introduction">
+			<h1>#  Who I am: </h1>
+			<h2 class="text-container">
+				Hi, I'm André Moreira. I'm a computer science major, and I have a Ph.D. degree in Computer Graphics area at PUC-Rio. 
+				Currently, I work at Tecgraf Institute with R&D projects.			</h2>
+			<div id="more">
+				<a href="#aboutme">Keep Scrolling <span class="fa fa-chevron-down fa-lg"></span></a>
+			</div>
+		</header>
+	</div>
+
+	<div class="section">
+		<header class="top">
+			<h1># About me </h1>
+		</header>
+		<div id="about-me-details">
+			<div itemscope itemtype="http://data-vocabulary.org/Person" id="my-infos" class="text-container">
+				<ul>
+					<h2>Summary:</h2>
+					<li>
+						<i class="fa fa-user"></i> 
+						My name is <span itemprop="name">André de Souza Moreira.</span>
+					</li>
+					<li>
+						<i class="fa fa-calendar"></i> 
+						I'm 30 years old.
+					</li>
+					<li>
+						<i class="fa fa-pencil"></i> 
+						I'm <span itemprop="title">PhD degree in Computer Graphics area at PUC-Rio (2020) </span>.
+					</li>
+					<li>
+						<i class="fa fa-briefcase"></i> 
+						I work at <span itemprop="affiliation">Tecgraf Institute</span>.
+					</li>
+					<li>
+						<i class="fa fa-home"></i>
+						 <span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+							I'm living in <span itemprop="locality">Rio de Janeiro - RJ</span>, <span itemprop="region">Brazil</span>
+						</span>
+					</li>
+				</ul>
+			</div>
+ 
+			<div id="interests" class="text-container">
+				<h2>My interest areas:</h2>
+				<ul>
+					<li>Computer Graphics</li>
+					<li>Computer Vision</li>
+					<li>Machine Learning</li>
+					<li>Medical Imaging</li>
+					<li>Project Management</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+<div id="projects-section" class="section">
+	<header class="top">
+		<h1># My Projects </h1>
+	</header>
+	<div id="projects-thumbs">
+		
+		<!-- <figure>
+			<a href="https://github.com/andredsm/ambientOcclusion">
+				<div>This is an implementation of Ambient Occlusion technique in C++ (C++/Opengl/GLSL)</div>
+				<img src="{{ IMG_PATH }}/proj/ambientOcclusion.png" alt="">
+			</a>
+		</figure>
+
+		<figure>
+			<a href="https://github.com/andredsm/BumpMapping">
+				<div>This is a simple implementation of Bump Mapping technique in C++ (C++/Opengl/GLSL)</div>
+				<img src="{{ IMG_PATH }}/proj/bumpMapping.png" alt="">
+			</a>
+		</figure>
+
+		<figure>
+			<a href="https://github.com/andredsm/Descritores-de-Textura">
+				<div>This project extracts image descriptors using co occurrency and Run-Length Matrices (C++ and Opencv)</div>
+				<img src="{{ IMG_PATH }}/proj/descriptors.jpg" alt="">
+			</a>
+		</figure>
+
+		<figure>
+			<a href="https://github.com/andredsm/macbeth">
+				<div>My goal in this project was to create an image of macbeth color chart from wavelength (C++ and Opencv)</div>
+				<img src="{{ IMG_PATH }}/proj/macBeth.jpg" alt="">
+			</a>
+		</figure>
+
+		<figure>
+			<a href="http://www.inf.puc-rio.br/~asouza/FCG/imagem.html">
+				<div>I've worked in this project in order to create an application that offers several operations related to image processing. (C++ and WxWidgets)</div>
+				<img src="{{ IMG_PATH }}/proj/imageProcessing.png" alt="">
+			</a>
+		</figure>
+
+		<figure>
+			<a href="http://www.inf.puc-rio.br/~asouza/FCG/tracadoderaios.html">
+				<div>This is an implementation of a simple raytracing scene (C++ and Opencv).</div>
+				<img src="{{ IMG_PATH }}/proj/raytracing.jpg" alt="">
+			</a>
+		</figure> -->
+
+	</div>
+</div>
+</div>

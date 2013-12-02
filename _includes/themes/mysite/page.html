@@ -1,0 +1,18 @@
+{% include themes/mysite/navbar_sup.html %}
+
+<div class="container">
+	
+{% if page.title %}
+	<div class="row-fluid">
+	  <div class="span12">
+	  	<div class="page-header">
+	  		<h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
+	  	</div>
+	    {{ content }}
+	  </div>
+	</div>
+{% else %}
+	{{ content }}
+{% endif %}
+
+</div>

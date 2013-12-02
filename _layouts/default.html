@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+  {% include JB/setup %}
+  {% include themes/blog/head.html %}
+
+  <body class="{% if page.bodyclass %}{{ page.bodyclass }}{% endif %}">
+
+    {{ content }}
+
+    {% include JB/analytics %}
+    <script src='{{ "/assets/themes/blog/js/vendor/modernizr.custom.32229-2.8-respondjs-1-4-2.js" | prepend: site.baseurl }}'></script>
+    <script src="{{'/assets/themes/blog/js/vendor/jquery-1.11.2.min.js' | prepend: site.baseurl }}"></script>
+    <script src='{{ "/assets/themes/blog/js/vendor/jquery.jpanelmenu.min.js" | prepend: site.baseurl }}'></script>
+    <script type='application/javascript' src='{{ "/assets/themes/blog/js/vendor/fastclick.min.js" | prepend: site.baseurl }}'></script>
+    {% if enable_retina %}
+    <script type='application/javascript' src='{{ "/assets/themes/blog/js/vendor/retina.min.js" | prepend: site.baseurl }}'></script>
+    {% endif %}
+    <script src=' {{ "/assets/themes/blog/js/main.js" | prepend: site.baseurl }}'></script>
+  </body>
+
+</html>
