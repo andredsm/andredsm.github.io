@@ -2,11 +2,9 @@ title : André Moreira
 tagline: Computer Graphics, Image Processing, Personal website, Computação Gráfica, Processamento de Imagem, Site Pessoal
 author :
   name : André Moreira
-  email : contact@andredsm.com
-  facebook: //facebook.com/andredsm
+  email : andremoreira.cp@gmail.com
   github : //github.com/andredsm
   twitter : //twitter.com/andredsm
-  gplus: //plus.google.com/+AndreMoreira1989
   linkedin: //linkedin.com/in/andredsm
   
 permalink: /blog/:categories/:year/:month/:day/:title 
@@ -23,7 +21,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-paginate
-  #feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -33,7 +30,7 @@ plugins:
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://andredsm.me
+production_url : https://andredsm.com
 
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
