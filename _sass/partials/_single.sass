@@ -6,39 +6,23 @@
     background-repeat: no-repeat
     background-size: cover
 
-    +breakpoint(sm)
-        height: 300px
-    +breakpoint(md)
-        height: 390px
-    +breakpoint(lg)
-        height: 460px
+    @include breakpoint(sm)
+        height: 100px
+    @include breakpoint(md)
+        height: 150px
+    @include breakpoint(lg)
+        height: 200px
 
-.meta
-    +clearfix
-    +font-size(12)
-    margin-bottom: 0
-
-    +breakpoint(sm)
-        +font-size(16)
-
-    +breakpoint(md)
-        margin-bottom: 20px
-
-    // used on the author page
-    .time
-        +font-size(23)
-        float: right
-    .min
-        +font-size(13)
-        float: right
-
+.fb-comments
+    display: block
+    margin: 0 auto
 
 .subtitle
     margin: 5px 0 20px 0
     font-style: italic
     +font-size(20)
 
-    +breakpoint(sm)
+    @include breakpoint(sm)
         +font-size(24)
 
 hr
@@ -61,15 +45,15 @@ blockquote
 .single-content-sidebar
     padding: 30px 8%
 
-    +breakpoint(md)
+    @include breakpoint(md)
         padding: 30px 14% 10px
-    +breakpoint(lg)
+    @include breakpoint(lg)
         padding: 30px 18% 10px
 
     h1
         letter-spacing: -1pt
 
-        +breakpoint(sm)
+        @include breakpoint(sm)
             +font-size(44)
     h2
         +font-size(28)
@@ -78,24 +62,18 @@ blockquote
 
     padding: 30px 8%
 
-    +breakpoint(md)
+    @include breakpoint(md)
         padding: 30px 0 70px
-    +breakpoint(lg)
+    @include breakpoint(lg)
         padding: 30px 0 170px
 
 .single-content-sidebar-area
 
     padding: 30px 15px
 
-    +breakpoint(md)
+    @include breakpoint(md)
         padding: 70px 0 0 25px
 
-    .meta
-        +clearfix
-        width: 80%
-
-        +breakpoint(md)
-            margin-bottom: 200px
     .user-img
         width: 20%
 
@@ -137,7 +115,7 @@ footer.single
     &.without-readmore
         padding: 40px 0 40px 0
 
-    +breakpoint(sm)
+    @include breakpoint(sm)
         text-align: left
     .social
         text-align: center
@@ -159,7 +137,7 @@ footer.single
     .category-list
         padding: 30px 0
 
-        +breakpoint(sm)
+        @include breakpoint(sm)
             border-right: solid 4px #E9E9E9
             padding: 0
     img
@@ -169,7 +147,7 @@ footer.single
     .user-icon
         float: none
 
-        +breakpoint(sm)
+        @include breakpoint(sm)
             float: right
     p,
     h3

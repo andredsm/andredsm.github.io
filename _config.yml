@@ -93,11 +93,11 @@ JB :
     #  site_id : nil
     #intensedebate :
     #  account : nil
-    #facebook :
-    #  appid : nil
-    #  num_posts: nil
-    #  width: nil
-    #  colorscheme: light
+    facebook :
+     appid : 405555807161313
+     num_posts: 5
+     width: 100% 
+     colorscheme: light
    
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.

@@ -1,10 +1,10 @@
 .main-content
 	padding: 30px
 
-	+breakpoint(sm)
+	@include breakpoint(sm)
 		padding: 60px 120px
 
-	+breakpoint(md)
+	@include breakpoint(md)
 		padding: 50px
 
 .sub-nav
@@ -38,7 +38,7 @@
 			margin-top: 0
 			+font-size(24)
 
-			+breakpoint(md)
+			@include breakpoint(md)
 				+font-size(32)
 
 			a
@@ -52,15 +52,12 @@
 			font-family: $serif
 			+font-size(16)
 
-			+breakpoint(md)
+			@include breakpoint(md)
 				+font-size(18)
 	&.author-page
 
 		.post-preview p
 			margin: 0
-
-
-
 
 .category
 	margin-top: 15px

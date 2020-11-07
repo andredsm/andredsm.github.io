@@ -7,7 +7,7 @@ layout: with-sidebar
     <a href="#" class="select-categories">Categories</a>
 </div>
 
-<div class="home-page-posts animated fadeIn ">
+<div class="home-page-posts">
     {% for post in paginator.posts %}
 
     <article class="post">
@@ -15,49 +15,50 @@ layout: with-sidebar
             <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
 
             {{ post.excerpt | truncatewords: 28 }}
-
-            <p class="meta">
-                {{ post.author_name}} in <a href='{{ "/category/" | append: post.categories.first | prepend: site.baseurl }}'>{{ post.categories.first | capitalize }}</a> <i class="link-spacer"></i> <i class="fa fa-bookmark"></i> {{ post.read_time }} minutes
-            </p>
         </div>
 
 
         {% if post.author_avatar %}
         <div class=" col-xs-2  no-gutter">
-            <img src="{{ site.baseurl}}/assets/imgs/{{ post.author_avatar }}.png" class="user-icon user-1" alt="user-image">
+            <img src="{{ site.baseurl}}/assets/imgs/{{ post.author_avatar }}.png" class="user-icon user-1"
+                alt="user-image">
         </div>
         {% endif %}
     </article>
     {% endfor %}
 
-<!-- Pagination links -->
-{% if paginator.total_pages > 1 %}
-<nav>
-  <ul class="pagination">
-  {% if paginator.previous_page %}
-    <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Previous</a></li>
-  {% endif %}
+    <!-- Pagination links -->
+    {% if paginator.total_pages > 1 %}
+    <nav>
+        <ul class="pagination">
+            {% if paginator.previous_page %}
+            <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;
+                    Previous</a></li>
+            {% endif %}
 
-  {% if paginator.next_page %}
-    <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a></li>
-  {% endif %}
+            {% if paginator.next_page %}
+            <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+            </li>
+            {% endif %}
 
-  </ul>
-</nav>
-{% endif %}
+        </ul>
+    </nav>
+    {% endif %}
 
 </div><!-- Home page posts -->
 
-<div class="home-page-categories hide animated fadeIn ">
+<div class="home-page-categories hide ">
     <div class="category row">
         <section>
             {% for category in site.categories %}
             {% if category.first != empty %}
-             <div class="category-preview col-xs-6 col-sm-4 ">
+            <div class="category-preview col-xs-3 col-sm-3 ">
                 <h2>{{ category | first | capitalize }}</h2>
-                <a href='{{ "/blog/category/" | append: category.first | prepend: site.url }}'><img src='{{ "/assets/imgs/blog/categories/" | append: category.first | prepend: site.baseurl }}.jpg' alt="category-image"></a>
-             </div>
-             {% endif %}
+                <a href='{{ "/blog/category/" | append: category.first | prepend: site.url }}'><img
+                        src='{{ "/assets/imgs/blog/categories/" | append: category.first | prepend: site.baseurl }}.jpg'
+                        alt="category-image"></a>
+            </div>
+            {% endif %}
             {% endfor %}
         </section>
     </div>
