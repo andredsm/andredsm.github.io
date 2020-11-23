@@ -1,0 +1,46 @@
+<nav class="site-nav">
+    <div class="site-nav-left">
+        {% if page.current != 'home' %}
+            {% if site.logo %}
+                <a class="site-nav-logo" href="{{ site.url }}{{ site.baseurl }}{{ site.blogurl }}"><img src="{{ site.baseurl}}{{ site.logo }}" alt="{{ site.title }}" /></a>
+            {% else %}
+                <a class="site-nav-logo" href="{{ site.url }}{{ site.baseurl }}{{ site.blogurl }}">{{ site.title }}</a>
+            {% endif %}
+        {% endif %}
+        {% if page.navigation %}
+            {% include navigation.html %}
+        {% endif %}
+    </div>
+    <div class="site-nav-right">
+        <div class="social-links">
+            {% if site.email %}
+                <a class="social-link" href="mailto:{{site.email}}?rel=author" title="Mail me ;)">
+                    <span class="fa fa-envelope"></span>
+                </a>
+            {% endif %}
+            {% if site.facebook %}
+                <a class="social-link" href="https://facebook.com/{{ site.facebook }}" target="_blank" rel="noopener">
+                    <span class="fab fa-facebook"></span>
+                </a>
+            {% endif %}
+            {% if site.twitter %}
+                <a class="social-link" href="https://twitter.com/{{ site.twitter }}" target="_blank" rel="noopener">
+                    <span class="fab fa-twitter"></span>
+                </a>
+            {% endif %}
+            {% if site.github %}
+                <a class="social-link" href="https://github.com/{{ site.github }}" target="_blank" rel="noopener">
+                    <span class="fab fa-github-square"></span>
+                </a>
+            {% endif %}
+            {% if site.linkedin %}
+                <a class="social-link" href="https://www.linkedin.com/in/{{ site.linkedin }}" title="My Linkedin">
+                    <span class="fab fa-linkedin"></span>
+                </a>
+            {% endif %}
+        </div>
+        {% if site.subscribers %}
+            <a class="subscribe-button" href="#subscribe">Subscribe</a>
+        {% endif %}
+    </div>
+</nav>

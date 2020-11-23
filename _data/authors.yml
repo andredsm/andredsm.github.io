@@ -1,0 +1,21 @@
+ghost:
+  username: ghost
+  name: Ghost
+  url_full: http://jekyller.github.io/jasper2/
+  url: jekyller.github.io/jasper2
+  bio: The professional publishing platform
+  picture: assets/theme/images/ghost.png
+  facebook: ghost
+  twitter: tryghost
+  cover: False
+  
+andre:
+  username: andre
+  name: André Moreira
+  url_full: https://www.andredsm.com/
+  url: https://www.andredsm.com/
+  bio: PhD in Computer Graphics @ PUC-RIO
+  picture: assets/theme/images/andre.jpg
+  facebook: null
+  twitter: tryghost
+  cover: assets/theme/images/andre-cover.jpg

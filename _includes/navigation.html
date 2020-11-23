@@ -1,0 +1,6 @@
+<ul class="nav" role="menu">
+    <li role="menuitem"><a href="{{ site.url }}{{site.baseurl}}{{ site.blogurl }}">Home</a></li>
+    {% for tag in site.data.tags %}
+        <li role="menuitem"><a href="{{ site.url }}{{site.baseurl}}{{ site.blogurl }}/tag/{{ tag[1].name }}/"> {{ tag[1].title }}</a></li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,13 @@
+---
+---
+@charset "utf-8";
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "global";
+@import "screen";
+@import "screen.edited";
+@import "syntax";
+
+@import "font-awesome-5.15.1/brands.scss";
+@import "font-awesome-5.15.1/solid.scss";
+@import "font-awesome-5.15.1/fontawesome.scss";

@@ -1,0 +1,20 @@
+cpp:
+  name: cpp
+  title: C++
+  description: False
+  cover: False
+cg:
+  name: computer-graphics
+  title: Computer Graphics
+  description: Anything related to bunnies
+  cover: False
+ML:
+  name: machine-learning
+  title: Machine Learning
+  description: False
+  cover: False
+general:
+  name: general
+  title: 
+  description: False
+  cover: False
