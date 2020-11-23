@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Document Settings -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Base Meta -->
+    <title>My personal website</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Styles'n'Scripts -->
+    <link rel="stylesheet" type="text/css" href="/assets/home/css/home.css" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.min.css" rel="stylesheet">
+
+    <!-- JS -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/vendors/scrolloverflow.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.min.js"></script>
+    
+    <!-- This tag outputs SEO meta+structured data and other important settings -->
+    <meta name="description" content="My personal website" />
+<link rel="shortcut icon" href="/assets/theme/images/favicon.png" type="image/png" />
+<link rel="canonical" href="/" />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+ <!--title below is coming from _includes/dynamic_title-->
+<meta property="og:site_name" content="Ordered Bits" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="My personal website" />
+<meta property="og:description" content="My personal website" />
+<meta property="og:url" content="/" />
+<meta property="og:image" content="/assets/theme/images/blog-cover.jpg" />
+<meta property="article:publisher" content="https://www.facebook.com/" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="My personal website" />
+<meta name="twitter:description" content="My personal website" />
+<meta name="twitter:url" content="/" />
+<meta name="twitter:image" content="/assets/theme/images/blog-cover.jpg" />
+<meta name="twitter:label1" content="Written by" />
+<meta name="twitter:data1" content="Ordered Bits" />
+<meta name="twitter:site" content="@andredsm" />
+<meta name="twitter:creator" content="@andredsm" />
+<meta property="og:image:width" content="2000" />
+<meta property="og:image:height" content="666" />
+
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Website",
+"publisher": {
+    "@type": "Organization",
+    "name": "Ordered Bits",
+    "logo": "/assets/theme/images/blog-icon.png"
+},
+"url": "/",
+"image": {
+    "@type": "ImageObject",
+    "url": "/assets/theme/images/blog-cover.jpg",
+    "width": 2000,
+    "height": 666
+},
+"mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/"
+},
+"description": "My personal website"
+}
+</script>
+
+<meta name="generator" content="Jekyll 3.6.2" />
+<link rel="alternate" type="application/rss+xml" title="My personal website" href="/feed.xml" />
+
+
+</head>
+<body>
+    <nav id="fixed-header">
+	<ul id="social-nav">
+		<li>
+			<a href="?rel=author" title="My Github">
+				<span class="fab fa-github-square"></span>
+			</a>
+		</li>
+		<li>
+			<a href="?rel=author" title="My Linkedin">
+				<span class="fab fa-linkedin"></span>
+			</a>
+		</li>
+		<li>
+			<a href="?rel=author" title="My Twitter">
+				<span class="fab fa-twitter"></span>
+			</a>
+		</li>
+		<li>
+			<a href="mailto:?rel=author" title="Mail me ;)">
+				<span class="fab fa-envelope"></span>
+			</a>
+		</li>
+	</ul>
+
+	<ul id="page-nav">
+		<li data-menuanchor="home" class="active"><a href="#home">#home</a></li>
+		<li data-menuanchor="aboutme"><a href="#aboutme">#about-me</a></li>
+		<li data-menuanchor="myprojects"><a href="#myprojects">#My-Projects</a></li>
+		<li> <a href="/blog">#My-Blog</a> </li>
+	</ul>
+</nav>
+
+<div id="fullpage">
+
+	<div id="about-1" class="section">
+		<header id="introduction">
+			<h1># Who I am: </h1>
+			<h2 class="text-container">
+				Hi, I'm André Moreira. I have Ph.D. degree in Computer Graphics area at PUC-Rio. Currently, I work at Tecgraf Institute with R&D projects. </h2>
+			<div id="more">
+				<a href="#aboutme">Keep Scrolling <span class="fab fa-chevron-down fa-lg"></span></a>
+			</div>
+		</header>
+	</div>
+
+	<div class="section">
+		<header class="top">
+			<h1># About me </h1>
+		</header>
+		<div id="about-me-details">
+			<div itemscope itemtype="http://data-vocabulary.org/Person" id="my-infos" class="text-container">
+				<ul>
+					<h2>Summary:</h2>
+					<li>
+						<i class="fas fa-user"></i>
+						My name is <span itemprop="name">André de Souza Moreira.</span>
+					</li>
+					<li>
+						<i class="fas fa-calendar"></i>
+						1989
+					</li>
+					<li>
+						<i class="fas fa-pen-square"></i>
+						<span itemprop="title">PhD degree in Computer Graphics area at PUC-Rio (2020) </span>.
+					</li>
+					<li>
+						<i class="fas fa-briefcase"></i>
+						Working at <span itemprop="affiliation">Tecgraf Institute</span>.
+					</li>
+					<li>
+						<i class="fas fa-home"></i>
+						<span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+							Living in <span itemprop="locality">Rio de Janeiro - RJ</span>, <span itemprop="region">Brazil</span>
+						</span>
+					</li>
+				</ul>
+			</div>
+
+			<div id="interests" class="text-container">
+				<h2>My interest areas:</h2>
+				<ul>
+					<li>Computer Graphics</li>
+					<li>Computer Vision</li>
+					<li>Machine Learning</li>
+					<li>Medical Imaging</li>
+					<li>Project Management</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div id="projects-section" class="section">
+		<header class="top">
+			<h1># My Projects </h1>
+		</header>
+		<div id="projects-thumbs">
+
+			<!-- <figure>
+			<a href="https://github.com/andredsm/ambientOcclusion">
+				<div>This is an implementation of Ambient Occlusion technique in C++ (C++/Opengl/GLSL)</div>
+				<img src="/proj/ambientOcclusion.png" alt="">
+			</a>
+		</figure>
+
+		<figure>
+			<a href="https://github.com/andredsm/BumpMapping">
+				<div>This is a simple implementation of Bump Mapping technique in C++ (C++/Opengl/GLSL)</div>
+				<img src="/proj/bumpMapping.png" alt="">
+			</a>
+		</figure>
+
+		<figure>
+			<a href="https://github.com/andredsm/Descritores-de-Textura">
+				<div>This project extracts image descriptors using co occurrency and Run-Length Matrices (C++ and Opencv)</div>
+				<img src="/proj/descriptors.jpg" alt="">
+			</a>
+		</figure>
+
+		<figure>
+			<a href="https://github.com/andredsm/macbeth">
+				<div>My goal in this project was to create an image of macbeth color chart from wavelength (C++ and Opencv)</div>
+				<img src="/proj/macBeth.jpg" alt="">
+			</a>
+		</figure>
+
+		<figure>
+			<a href="http://www.inf.puc-rio.br/~asouza/FCG/imagem.html">
+				<div>I've worked in this project in order to create an application that offers several operations related to image processing. (C++ and WxWidgets)</div>
+				<img src="/proj/imageProcessing.png" alt="">
+			</a>
+		</figure>
+
+		<figure>
+			<a href="http://www.inf.puc-rio.br/~asouza/FCG/tracadoderaios.html">
+				<div>This is an implementation of a simple raytracing scene (C++ and Opencv).</div>
+				<img src="/proj/raytracing.jpg" alt="">
+			</a>
+		</figure> -->
+
+		</div>
+	</div>
+</div>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#fullpage').fullpage({
+          // scrollOverflow: true,
+          anchors: [ 'home', 'aboutme', 'myprojects'],
+          menu: '#fixed-header',
+          // fixedElements: '#nav',
+          responsiveWidth: 1100
+        });
+    });
+    </script>
+    <script type="application/ld+json">
+    {  "@context" : "http://schema.org",
+       "@type" : "WebSite",
+       "name" : "AndreMoreira",
+       "alternateName" : "Andre",
+       "url" : "https://www.andredsm.com"
+    }
+    </script>    
+    
+    <!-- Add Google Analytics  -->
+    <!-- Google Analytics Tracking code -->
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50931414-1', 'auto');
+  ga('send', 'pageview');
+
+ </script>
+
+
+    <!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag -->
+    <!-- ghost_foot -->
+
+</body>
+</html>
